@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let C1 = "";
+    let C2 = "";
+    let Nl = "";
+    let Nf = 60;
+
+    C1 = prompt ("C1 : " )
+    C2 = prompt ("C2 : " )
+    Nl = prompt ("Nl : " )
+
+    function NC ( Nf, Nl) {
+        return (Nf - (Nl*0.3))/ 0.7;
+    }
+    let Nc = NC ( Nf, Nl);
+    // document.write(Nc);
+
+    function C3 (Nc, C2, C1){
+        return Nc*3 - C1 - C2;
+    }
+    let need = C3 (Nc, C1,C2);
+    document.write(need);
+
+    </script>
+</body>
+</html>

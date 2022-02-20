@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let t = prompt( "Enter real time: ");
+        let h = prompt( "Enter hours to add: ");
+
+        for (let i = 0; i < h; i++) {
+            t++
+            if(t === 13){
+                h = 1;
+            }  
+        }
+        document.write("In " + h + " hours the clock will strike  " + t );
+      
+    </script>
+</body>
+</html>
