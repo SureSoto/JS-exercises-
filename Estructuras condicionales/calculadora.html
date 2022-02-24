@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let operand = prompt("Enter number: ");
+        let symbol = prompt( "Enter symbol: ");
+        let operator = prompt(" Enter operator: ");
+
+       if(symbol === "+"){
+        let result = parseInt(operand) + parseInt(operator);
+        document.write(result);
+       }
+       else if(symbol === "-"){
+        let result = parseInt(operand) - parseInt(operator);
+        document.write(result);
+       }
+       else if(symbol === "*"){
+        let result = parseInt(operand) * parseInt(operator);
+        document.write(result);
+       }
+       else if(symbol === "/"){
+        let result = parseInt(operand) / parseInt(operator);
+        document.write(result);
+       }
+
+    </script>
+</body>
+</html>

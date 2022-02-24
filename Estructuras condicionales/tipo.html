@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dataType = prompt("Enter data: ");
+      let num = parseInt(dataType);
+      let symbol = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+      if (isNaN(num)) {
+        
+        if (dataType.match(symbol)) {
+          document.write("Is not a letter or a number");
+        } else {
+          if (dataType === dataType.toUpperCase()) {
+            document.write("Is an uppercase letter");
+          } else {
+            document.write("Is a lowercase letter");
+          }
+        }
+      } else {
+        document.write("Is a number<br>");
+      }
+    </script>
+  </body>
+</html>

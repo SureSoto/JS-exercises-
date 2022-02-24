@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  word1 = prompt("Enter word 1:");
+        let  word2 =  prompt("Enter word 2:");
+
+        if( word1.length > word2.length){
+            document.write(word1.length - word2.length +  " letters more  than " + word2 );
+        }
+        else if( word2.length > word1.length){
+            document.write(word2.length - word1.length +  " letters more  than " + word2 );
+        }
+        else if ( word1.length = word2.length){
+            document.write("Both words have the same length ");
+        }
+ 
+    </script>
+</body>
+</html>

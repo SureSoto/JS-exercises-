@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let aSide = prompt("Enter number: ");
+      let bSide = prompt("Enter number: ");
+      let cSide = prompt("Enter number: ");
+      let a = parseInt(aSide);
+      let b = parseInt(bSide);
+      let c = parseInt(cSide);
+
+    
+ 
+      if (a > b + c || b > a + c || c > a + b) {
+        document.write("It is not a valid triangle. ");
+    }
+    else{ 
+        if (a !== b && a !== c && b !== c) {
+        document.write(" The triangle is scalene. ");
+      }
+      
+
+      if((a == b && a !== c) || (b == c && b !== a) || (c == a && c !== b)){
+        document.write(" The triangle is isosceles.  ");
+      }
+      
+
+      if(a == b && a == c && b == c){
+        document.write(" The triangle is equilateral. ");
+      } 
+    }
+     
+        
+      
+    
+    </script>
+  </body>
+</html>
