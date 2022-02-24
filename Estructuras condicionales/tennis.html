@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let playerA = prompt(" Number of sets won : ");
+      let playerB = prompt(" Number of sets won : ");
+
+      //REGLA 1 DEL JUEGO
+      if (playerA == 6 && playerB == 4) {
+        document.write(" A player won the game");
+      } else if (playerB == 6 && playerA == 4) {
+        document.write(" B player won the game");
+      }
+      //REGLA 2 DEL JUEGO
+      if (playerA == 5 && playerB == 5) {
+        document.write("The game is not over");
+      }
+        if (playerA == 7 && playerB == 5) {
+          document.write(" A player won the game");
+        } else if (playerB == 7 && playerA == 5) {
+          document.write(" B player won the game");
+        }
+    
+      //REGLA 3 DEL JUEGO
+      if (playerA == 6 && playerB == 6) {
+        document.write("The game is not over");
+      }
+        if (playerA == 7 && playerB == 6) {
+          document.write(" A player won the game");
+        } else if (playerB == 7 && playerA == 6) {
+          document.write(" B player won the game");
+        }
+      //JUEGO INVALIDO
+      if( playerA > 7 && playerB < 5);
+        document.write(" Invalid<br>");
+        if (playerA < 5 && playerB > 7);
+        document.write("Invalid");
+        
+        // if( playerA == playerB);
+        // document.write("The game is not over");
+
+    </script>
+  </body>
+</html>

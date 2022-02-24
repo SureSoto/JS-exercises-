@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let day = prompt( "Day: " );
+        let month = prompt( "Month: " );
+        let year = prompt( "Year: " );
+        let checkDay =  parseInt(day);
+        let checkMonth = parseInt(month);
+        let checkYear= parseInt(year);
+
+        const date = new Date();
+        const actualYear = date.getFullYear();
+        const today = date.getDate();
+        const actualMonth = date.getMonth() + 1;
+
+        let age = actualYear - parseInt(year);
+        
+        
+        if (today !== checkDay || actualMonth !== checkMonth){
+            let yAge = age - 1;
+            document.write("You are " + yAge +  " years old <br>");
+        }
+        else{
+            document.write("You are " + age +  " years old <br>" );
+
+        }
+        
+
+    </script>
+</body>
+</html>

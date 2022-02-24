@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let weight = prompt (" Enter you weight kg: ");
+        let height = prompt (" Enter your height: ");
+        let age = prompt( " Enter your age: ");
+        let w = parseInt (weight);
+        let h = parseFloat(height);
+        let a = parseInt(age);
+
+        
+
+        let myIMC = w / h**2 ;
+        // document.write("El resultado es " + myIMC.toPrecision(4) + "<br>");
+
+        if( a < 45 && myIMC < 22){
+            document.write( "Low risk.");
+        }
+        if( a < 45 && myIMC >= 22 ||  a >= 45 && myIMC < 22){
+            document.write( "Medium risk.");
+        }
+        if( a >= 45 && myIMC >= 22){
+            document.write( "High risk.");
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>
