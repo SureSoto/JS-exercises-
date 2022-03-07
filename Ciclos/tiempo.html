@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = 0;
+      let minutes = [];
+      let hours = 0;
+      let minute = 0;
+      let add = 0;
+
+      do {
+        input = parseInt(prompt('Enter number: '));
+        minutes.push(input);
+      } while (input !== 0);
+
+      for (let i = 0; i < minutes.length; i++) {
+        add += minutes[i];
+      }
+      for (let j = 0; j < add; j++) {
+          minute++;
+        if (minute === 60) {
+          hours++;
+          minute = 0;
+        }
+      }
+      if(minute < 10){
+        document.write(`${hours} : 0${minute}`);
+      }
+      else{
+        document.write(`${hours} : ${minute}`);
+      }
+     
+    </script>
+  </body>
+</html>
