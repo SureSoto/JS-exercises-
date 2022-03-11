@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = 3;
+      let add1 = 0;
+      let add2 = (number * (number + 1)) / 2;
+
+      for (let i = 0; i <= number; i++) {
+        add1 += i;
+      }
+      document.write( "Summation 1: " + add1 + "<br>");
+      document.write( "Summation 2: " + add2 + "<br>" );
+      if (add1 === add2) {
+        document.write('They are equals');
+      }
+    </script>
+  </body>
+</html>

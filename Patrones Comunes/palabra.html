@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberInput = parseInt(prompt('Enter number: '));debugger
+        let word = '';
+        let saveWord = [];
+        
+        for(let i = 1; i <= numberInput; i++){
+            word = prompt('Enter a word: ');
+            saveWord.push(word);
+        }
+        document.write(`Amount of word: ${numberInput} <br> `);
+
+        for(let j = 0; j < saveWord.length; j++){
+            document.write(`Word${j + 1}: ${saveWord[j]} <br>`);
+        }
+
+        saveWord.sort(function(a,b){return a.length - b.length;})
+        
+        let shortestWord = saveWord[0];
+        document.write(`The shortest word is: ${shortestWord}<br>`);
+
+        let longestWord = saveWord[numberInput - 1];
+        document.write(`The longest word is: ${longestWord}`);
+    </script>
+</body>
+</html>
