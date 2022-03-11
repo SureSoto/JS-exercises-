@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Enter number: "));
+        let input = 0;
+        const inputNumbers = [];
+
+       for( let i = 1; i <= number; i++){
+           input = parseInt(prompt("Enter number: "));
+           inputNumbers.push(input);
+       }
+       
+       inputNumbers.sort().reverse();
+
+       for( let i = 0; i < inputNumbers.length; i++){
+       
+       }
+       document.write("The longets is: " + inputNumbers[0]);
+       
+        
+    </script>
+</body>
+</html>

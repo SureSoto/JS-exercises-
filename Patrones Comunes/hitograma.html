@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = 0;
+      let numbers = [];
+      let positiveNumbers = 0;
+      let negativeNumbers = 0;
+      let result = 0;
+
+      do {
+        debugger;
+        input = parseInt(prompt('Enter number: '));
+        numbers.push(input);
+      } while (input !== 0);
+
+      for (let i = 0; i < numbers.length; i++) {
+          document.write(`${numbers[i]} <br>`);
+        if (numbers[i] > 0) {
+          positiveNumbers++;
+        }
+        if (numbers[i] < 0) {
+          negativeNumbers++;
+        }
+      }
+      document.write(`Positive: `);
+      for (let j = 0; j < positiveNumbers; j++) {
+        document.write(`*`);
+      }
+      document.write('<br>');
+      document.write(`Negative: `);
+      for (let j = 0; j < negativeNumbers; j++) {
+        document.write(`*`);
+      }
+    </script>
+  </body>
+</html>
