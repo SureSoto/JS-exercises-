@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let row = parseInt(prompt('Enter the row number: '));debugger
+        let column = parseInt(prompt('Enter the column number: '));
+
+        // const rowAddOne = (row) => row + 1;
+        // const rowAddTwo = (row) => row + 2;
+        // const rowSubtractOne = (row) => row - 1;
+        // const rowsubtractTwo = (row) => row -2;
+
+        // const columnAddOne = (column) => column + 1;
+        // const columnAddTwo = (column) => column + 2;
+        // const columnSubtractOne = (column) => column - 1;
+        // const columnSubtractTwo = (column) => column - 2;
+
+        if( row === 9 || column === 9 ){
+            document.write('Invalid');
+        }
+
+      
+        //LOS QUE SUBEN 1 FILA y SUBEN 2 COLUMNAS 
+        if( row >= 1 && row <= 7 && column >= 1 && column <= 6){
+            document.write(`${row + 1}   ${column + 2} <br>`);
+        }
+        
+        //LOS QUE SUBEN 2 FILA Y 1 COLUMNA
+        if(row >= 1 && row <= 6 && column >= 1 && column <= 7){
+            document.write(`${  row + 2}   ${column + 1} <br>`);
+        }
+         
+        //LOS QUE SUBEN 1 FILA Y BAJAN 2 COLUMNA
+        if(row <= 7 && row >= 1 && column >= 3 && column <= 8){
+            document.write(`${ row + 1}   ${column - 2} <br>`);
+        }
+
+        //LOS QUE SUBEN 2 FILA Y BAJAN 1 COLUMNAS
+        if(row >= 1 && row <= 6 && column >= 2 && column <= 8){
+            document.write(`${ row + 2}   ${column - 1} <br>`);
+        }
+
+
+
+        //LOS QUE BAJAN 1 FILA y BAJAN 2 COLUMNA
+        if(row <= 8 && row >= 2 && column <= 8 && column >=2){
+            
+            document.write(`${row - 1}  ${ column - 2}<br>`);
+        }
+        //LOS QUE BAJAN 2 FILA Y 1 COLUMNA
+        if(row <= 8 && row >= 3 && column <= 8 && column >= 3){
+            
+            document.write(`${row -2}  ${column - 1}<br>`);
+        }
+
+        //LOS QUE BAJAN 1 FILA Y SUBEN 2 COLUMNAS
+        if(row >= 2 && row <= 8 && column >= 1 && column <= 6){
+            document.write(`${ row - 1}   ${column + 2} <br>`);
+        }
+
+        //LOS QUE BAJAN 2 FILA Y SUBEN 1 COLUMNAS
+        if(row >= 3 && row <= 8 && column >= 2 && column <= 8){
+            document.write(`${ row - 2}   ${column + 1} `);
+        }
+        
+
+        
+
+       
+        
+    </script>
+</body>
+</html>
