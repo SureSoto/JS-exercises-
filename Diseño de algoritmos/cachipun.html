@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let scoreA = 0;
+        let scoreB = 0;
+        do{
+            let playerA = prompt('Enter your move: ');debugger
+            let playerB = prompt('Enter your move: '); 
+
+             // SCISSORS AND ROCK
+        if(playerA === 'scissors' && playerB === 'rock'){
+            scoreB++;
+        }
+        else if(playerB === 'scissors' && playerA === 'rock'){
+            scoreA++;
+        }
+        //SCISSORS AND PAPER
+        if(playerA === 'scissors' && playerB === 'paper'){
+            scoreA++;
+        }
+        else if(playerB === 'scissors' && playerA === 'paper'){
+            scoreB++;
+        } 
+        //ROCK AND PAPER
+        if(playerA === 'rock' && playerB === 'paper'){
+            scoreA++;
+        }
+        else if(playerB === 'rock' && playerA === 'paper'){
+            scoreB++;
+        } 
+        //EQUALS
+        if(playerA === playerB){
+            scoreA + 0;
+            scoreB + 0;
+        }
+        document.write(`A: ${playerA} <br>`);
+        document.write(`B: ${playerB} <br>`);
+        document.write(`${scoreA} - ${scoreB} <br> `);
+
+        }
+        while(scoreA < 3 && scoreB < 3);
+
+        if(scoreA > scoreB){
+            document.write(`Player A is the winner`);
+        }
+        else{
+            document.write(`Player B is the winner`);
+        }
+
+        
+
+    </script>
+</body>
+</html>

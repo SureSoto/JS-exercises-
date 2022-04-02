@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numerator = parseInt(prompt('Enter number: '));
+        let denominator = parseInt(prompt('Enter number: '));
+        //EL NUMERO ES DIVISIBLE
+        const dividers = (numerator, denominator) => numerator % denominator;
+        let result = dividers(numerator, denominator);
+
+        if( result === 0){
+            document.write('True');
+        }
+        else{
+            document.write('False');
+        }
+
+    // EL NUMERO ES PRIMO
+
+    if(result === 0 && denominator !== numerator && denominator !== 1){
+        //compuesto 
+    }
+
+        
+    </script>
+</body>
+</html>

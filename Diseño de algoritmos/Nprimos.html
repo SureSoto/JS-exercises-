@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      //PRIME OR COMPOSITE
+      // let number = parseInt(prompt('Enter number: '));debugger
+      // let result = 0;
+      // let isPrime = true;
+      //   //PRIME OR COMPOSITE
+      // for( let i = 2; i < number; i++){
+      //     result = number % i;
+      //     if(result === 0 ){
+      //         isPrime = false;
+      //         break;
+      //     }
+      // }
+      //      if(isPrime ){
+      //         document.write(`${number} is a prime number `);
+      //     }
+      //     else{
+      //       document.write(`${number} is a composite number `);
+      //     }
+
+      //   FIRTS PRIME NUMBERS
+
+      // let input = parseInt(prompt('Enter number: '));
+      // let resultNumber = 0;
+      // let isPrimeNumber = true;
+      // let number = 2;
+      // let primeArray = [2];
+
+      // do {
+      //   isPrimeNumber = true;
+      //   number++;
+      //   for (let i = 1; i < number; i++) {
+      //     if (i !== 1) {
+      //       if (number % i === 0) {
+      //         isPrimeNumber = false;
+      //         break;
+      //       }
+      //     }
+      //   }
+      //   if (isPrimeNumber) {
+      //     primeArray.push(number);
+      //   }
+      // } while (primeArray.length !== input);
+
+      // for (let j = 0; j < primeArray.length; j++) {
+      //   document.writeln(`${primeArray[j]} `);
+      // }
+
+      //PRIME NUMBERS LESS THAN
+
+      // let input = parseInt(prompt('Enter number: '));
+      // let resultNumber = 0;
+      // let isPrimeNumber = true;
+      // let number = 2;
+      // let primeArray = [2];
+
+      // do {
+      //   isPrimeNumber = true;
+      //   number++;
+      //   for (let i = 1; i < number; i++) {
+      //     if (i !== 1) {
+      //       if (number % i === 0) {
+      //         isPrimeNumber = false;
+      //         break;
+      //       }
+      //     }
+      //   }
+      //   if (isPrimeNumber) {
+      //     primeArray.push(number);
+      //   }
+      // } while (primeArray.length !== input);
+
+      // for (let j = 0; j < primeArray.length; j++) {
+      //   if(primeArray[j] < input){
+      //     document.writeln(`${primeArray[j]} `);}
+      // }
+      //HOW MANY PRIME NUMBERS LESS THAN
+
+      let input = parseInt(prompt('Enter number: '));
+      let resultNumber = 0;
+      let isPrimeNumber = true;
+      let number = 2;
+      let primeArray = [2];
+      let newArray = [];
+
+      do {
+        isPrimeNumber = true;
+        number++;
+        for (let i = 1; i < number; i++) {
+          if (i !== 1) {
+            if (number % i === 0) {
+              isPrimeNumber = false;
+              break;
+            }
+          }
+        }
+        if (isPrimeNumber) {
+          primeArray.push(number);
+        }
+      } while (primeArray.length !== input);
+
+      for (let j = 0; j < primeArray.length; j++) {
+        debugger;
+        if (primeArray[j] < input) {
+          newArray.push(primeArray[j]);
+        }
+      }
+      document.write(newArray.length);
+    </script>
+  </body>
+</html>

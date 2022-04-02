@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let UTFSM = prompt('Enter rol UTFSM: ');
+      const saveNumbers = UTFSM.split('');
+
+      const justNumber = saveNumbers.filter((simbol) => simbol !== '-');
+      let reverseNumbers = justNumber.reverse();
+
+      let multiple = 2;
+      let resultMultiple = [];
+      let add = 0;
+
+      for (let j = 0; j < reverseNumbers.length; j++) {
+        let printedNumbers = reverseNumbers[j];
+        parseInt(printedNumbers);
+
+        let result = printedNumbers * multiple;
+        resultMultiple.push(result);
+
+        if (multiple === 7) {
+          multiple = 2;
+        } else {
+          multiple++;
+        }
+      }
+
+      for (i = 0; i < resultMultiple.length; i++) {
+        add += resultMultiple[i];
+      }
+
+      let modul = add % 11;
+      debugger;
+      let substraction = 11 - modul;
+
+      let checkDigit =  parseInt(UTFSM) - substraction;
+      document.write(`The Check Digit numbers is: ${checkDigit}`);
+     
+    </script>
+  </body>
+</html>

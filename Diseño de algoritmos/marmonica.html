@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt('Enter n: '));
+        document.write(`Amount of numbers: ${input}<br>`)
+        let arrayResultOne = [];
+        let resultOne = 0;
+        let harmonic = 0;
+        
+        for (let i = 0; i < input; i++){
+           let theNumbers = parseInt(prompt('Enter x: '));
+           let equationOne = 1/theNumbers;
+           arrayResultOne.push(equationOne);
+           document.write(`n = ${theNumbers} <br>`);
+        }
+
+        for(j = 0; j < arrayResultOne.length; j++){
+            resultOne += arrayResultOne[j];
+        }
+        harmonic = input/resultOne;
+        document.write(`H = ${harmonic}`);
+    </script>
+</body>
+</html>
